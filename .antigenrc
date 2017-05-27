@@ -1,0 +1,17 @@
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles
+antigen bundle vi-mode
+antigen bundle git
+antigen bundle common-aliases
+antigen bundle dirhistory
+antigen bundle history-substring-search
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme caiogondim/bullet-train.zsh bullet-train
+
+# Tell Antigen that you're done.
+antigen apply

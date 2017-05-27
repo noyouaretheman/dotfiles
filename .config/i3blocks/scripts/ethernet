@@ -1,0 +1,7 @@
+#!/bin/sh
+
+INTERFACE="${BLOCK_INSTANCE:-enp3s0}"
+[[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]] && exit
+
+echo 
+echo 

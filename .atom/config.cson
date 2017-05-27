@@ -1,0 +1,99 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#f0c674"
+      accentColor: "#de935f"
+      predefinedColor: "Purple"
+    fonts: {}
+    tabs: {}
+    treeView:
+      compactList: true
+    ui:
+      animations: false
+  "autocomplete-clang":
+    includeSystemHeadersDocumentation: true
+  "base16-syntax":
+    scheme: "Tomorrow"
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  "dark-flat-ui": {}
+  editor:
+    fontFamily: "DejaVu Sans"
+    fontSize: 13
+    showIndentGuide: true
+    softWrap: true
+    softWrapHangingIndent: 4
+    tabLength: 4
+  "exception-reporting":
+    userId: "43fd62fa-3448-44e5-8f9d-75af168f970e"
+  "file-watcher":
+    promptWhenChange: true
+  fonts:
+    fontFamily: "DejaVu Mono"
+  linter: {}
+  "linter-ui-default": {}
+  minimap:
+    autoToggle: false
+    plugins:
+      codeglance: false
+      codeglanceDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "minimap-autohide": false
+      "minimap-autohideDecorationsZIndex": 0
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+  "split-diff":
+    hideTreeView: true
+    ignoreWhitespace: true
+  "tree-view": {}
+  "vim-mode-plus":
+    clearHighlightSearchOnResetNormalMode: true
+    flashOnOperate: false
+    flashOnSearch: false
+    flashOnUndoRedo: false
+    flashScreenOnSearchHasNoMatch: false
+    highlightSearch: true
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+    useSmartcaseForSearchCurrentWord: true
+  welcome:
+    showOnStartup: false
+".c.source":
+  editor:
+    preferredLineLength: 78
+    tabLength: 4
+".console.python.text":
+  editor:
+    autoIndentOnPaste: true
+    preferredLineLength: 78
+    softWrapHangingIndent: 4
+    tabLength: 4
+".cpp.source":
+  editor:
+    preferredLineLength: 78
+    tabLength: 4
+".diff":
+  editor:
+    preferredLineLength: 78
+    tabLength: 4
+".python.regexp.source":
+  editor:
+    preferredLineLength: 78
+    softWrapHangingIndent: 4
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+    preferredLineLength: 78
+    softWrapHangingIndent: 4
+".python.text.traceback":
+  editor:
+    preferredLineLength: 78
+    softWrapHangingIndent: 4
+    tabLength: 4

@@ -1,0 +1,6 @@
+# remove aliases from the common-alises package that I don't like...
+# I hate being prompted all of the time...
+unalias rm
+unalias mv
+unalias cp
+
