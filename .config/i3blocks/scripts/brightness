@@ -23,4 +23,6 @@
 #	5) xbacklight -dec 10 ;;
 #esac
 
+# wait for a little while so the brightness file has time to update.
+sleep 0.05
 printf "%.0f%%" "$(xbacklight -get)"
