@@ -43,7 +43,7 @@ fi
 # determine mute status
 if isMuted; then
 	icon=""
-	status=33
+	#status=33
 fi
 
 full="$icon $vol%"
