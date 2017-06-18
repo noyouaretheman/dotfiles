@@ -124,7 +124,7 @@ interval=5
 #
 [calendar]
 label= 
-interval=60
+interval=10
 
 
 # Generic media player support
