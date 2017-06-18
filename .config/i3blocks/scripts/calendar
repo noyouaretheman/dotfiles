@@ -3,7 +3,7 @@
 
 
 # date pattern, more at 'man date'
-DATE_PATTERN="%d/%m %H:%M"
+DATE_PATTERN="%d/%m %H:%M "
 
 #
 # command after clicking
