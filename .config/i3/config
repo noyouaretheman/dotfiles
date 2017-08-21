@@ -38,8 +38,8 @@ set $term urxvt
 # Your preferred application launcher
 set $menu rofi -show run
 
-### Wallpaper
-exec --no-startup-id feh --bg-fill /mnt/data/Pictures/wallpapers/zSnIQRm.png
+### Monitors
+exec --no-startup-id ~/.config/i3/monitors
 
 
 ### Key bindings

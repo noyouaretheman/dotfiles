@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# set up multiple monitors (if connected)
+
+if [ `xrandr | grep -c ' connected '` -eq 2 ]; then
+    # dual monitor setup
+    xrandr --output LVDS-1 --mode 1366x768 --primary --pos 0x384 --output HDMI-1 --mode 2048x1152 --pos 1366x0
+    feh --bg-fill /mnt/data/Pictures/wallpapers/zSnIQRm.png
+else
+    # single monitor setup
+    xrandr --output LVDS-1 --mode 1366x768 --primary --output HDMI-1 --off
+    feh --bg-fill /mnt/data/Pictures/wallpapers/zSnIQRm.png
+fi
