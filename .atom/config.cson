@@ -5,7 +5,8 @@
       accentColor: "#de935f"
       predefinedColor: "Purple"
     fonts: {}
-    tabs: {}
+    tabs:
+      compactTabs: true
     treeView:
       compactList: true
     ui:
@@ -49,6 +50,15 @@
       "minimap-autohideDecorationsZIndex": 0
       "split-diff": true
       "split-diffDecorationsZIndex": 0
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.tex.latex"
+    ]
   "split-diff":
     hideTreeView: true
     ignoreWhitespace: true
