@@ -22,7 +22,6 @@ packages: [
   "language-verilog"
   "language-vhdl"
   "latex"
-  "latex-completions"
   "line-count"
   "line-count-status"
   "linter"

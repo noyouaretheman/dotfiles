@@ -7,3 +7,8 @@ unalias cp
 # alias the much-more-useful perl-rename command to rename
 alias rename=perl-rename
 
+# aliases for quartus
+alias quartus64='quartus --64bit'
+
+# aliases for matlab
+alias matlab='matlab -desktop'

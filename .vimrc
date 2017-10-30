@@ -1,4 +1,4 @@
-colorscheme base16-tomorrow
+colorscheme base16-chalk
 
 syntax on
 

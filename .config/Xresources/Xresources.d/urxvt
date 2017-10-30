@@ -3,5 +3,6 @@ URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=11:hinting=true:antiali
 URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=11:hinting=true:antialias=true:style=bold
 URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=11:hinting=true:antialias=true:style=oblique
 URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=11:hinting=true:antialias=true:style=bold oblique
+URxvt.intensityStyles: false
 
 

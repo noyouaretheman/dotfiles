@@ -1,57 +1,45 @@
-! base16 chalk color scheme 
-#define foreground_color #d0d0d0
-#define background_color #151515
-#define cursor_color     #d0d0d0
-#define black            #151515
-#define bright_black     #505050
-#define red              #fb9fb1
-#define bright_red       #fb9fb1
-#define green            #acc267
-#define bright_green     #acc267
-#define yellow           #ddb26f
-#define bright_yellow    #ddb26f
-#define blue             #6fc2ef
-#define bright_blue      #6fc2ef
-#define magenta          #e1a3ee
-#define bright_magenta   #e1a3ee
-#define cyan             #12cfc0
-#define bright_cyan      #12cfc0
-#define white            #d0d0d0
-#define bright_white     #f5f5f5
+! Base16 Chalk
+! Scheme: Chris Kempson (http://chriskempson.com)
 
-! special
-*.foreground:   foreground_color
-*.background:   background_color
-*.cursorColor:  cursor_color
+#define base00 #151515
+#define base01 #202020
+#define base02 #303030
+#define base03 #505050
+#define base04 #b0b0b0
+#define base05 #d0d0d0
+#define base06 #e0e0e0
+#define base07 #f5f5f5
+#define base08 #fb9fb1
+#define base09 #eda987
+#define base0A #ddb26f
+#define base0B #acc267
+#define base0C #12cfc0
+#define base0D #6fc2ef
+#define base0E #e1a3ee
+#define base0F #deaf8f
 
-! black
-*.color0:       black
-*.color8:       bright_black
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base05
 
-! red
-*.color1:       red
-*.color9:       bright_red
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
 
-! green
-*.color2:       green
-*.color10:      bright_green
-
-! yellow
-*.color3:       yellow
-*.color11:      bright_yellow
-
-! blue
-*.color4:       blue
-*.color12:      bright_blue
-
-! magenta
-*.color5:       magenta
-*.color13:      bright_magenta
-
-! cyan
-*.color6:       cyan
-*.color14:      bright_cyan
-
-! white
-*.color7:       white
-*.color15:      bright_white
+*.color8:       base04
+*.color9:       base09
+*.color10:      base01
+*.color11:      base02
+*.color12:      base04
+*.color13:      base06
+*.color14:      base0F
+*.color15:      base07

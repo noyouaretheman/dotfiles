@@ -1,8 +1,8 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#f0c674"
-      accentColor: "#de935f"
+      abaseColor: "#fb9fb1"
+      accentColor: "#6fc2ef"
       predefinedColor: "Purple"
     fonts: {}
     tabs:
@@ -14,12 +14,20 @@
   "autocomplete-clang":
     includeSystemHeadersDocumentation: true
   "base16-syntax":
-    scheme: "Tomorrow"
+    scheme: "Chalk"
   core:
+    disabledPackages: [
+      "linter-ui-default"
+      "linter"
+      "linter-gcc"
+      "linter-pylama"
+      "build"
+      "busy"
+    ]
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
-      "base16-tomorrow-dark-theme"
+      "base16-syntax"
     ]
   "dark-flat-ui": {}
   editor:
@@ -35,7 +43,12 @@
     promptWhenChange: true
   fonts:
     fontFamily: "DejaVu Mono"
-  linter: {}
+  latex:
+    buildOnSave: true
+  linter:
+    disabledProviders: [
+      "Pylama"
+    ]
   "linter-ui-default": {}
   minimap:
     autoToggle: false
@@ -50,6 +63,9 @@
       "minimap-autohideDecorationsZIndex": 0
       "split-diff": true
       "split-diffDecorationsZIndex": 0
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -70,6 +86,7 @@
     flashOnUndoRedo: false
     flashScreenOnSearchHasNoMatch: false
     highlightSearch: true
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     useClipboardAsDefaultRegister: true
     useSmartcaseForSearch: true
     useSmartcaseForSearchCurrentWord: true
