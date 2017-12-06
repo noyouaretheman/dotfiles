@@ -16,6 +16,10 @@
   "base16-syntax":
     scheme: "Tomorrow"
   core:
+    disabledPackages: [
+      "rustfmt"
+      "rust-api-docs-helper"
+    ]
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
@@ -24,7 +28,6 @@
   "dark-flat-ui": {}
   editor:
     fontFamily: "DejaVu Sans"
-    fontSize: 13
     showIndentGuide: true
     softWrap: true
     softWrapHangingIndent: 4
@@ -35,6 +38,10 @@
     promptWhenChange: true
   fonts:
     fontFamily: "DejaVu Mono"
+  latex:
+    buildOnSave: true
+    opener: "okular"
+  "latex-completions": {}
   linter: {}
   "linter-ui-default": {}
   minimap:
@@ -50,6 +57,9 @@
       "minimap-autohideDecorationsZIndex": 0
       "split-diff": true
       "split-diffDecorationsZIndex": 0
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -107,3 +117,12 @@
     preferredLineLength: 78
     softWrapHangingIndent: 4
     tabLength: 4
+".rust.source":
+  "bracket-matcher":
+    autocompleteCharacters: [
+      "()"
+      "[]"
+      "{}"
+      "\"\""
+      "``"
+    ]
