@@ -23,6 +23,8 @@
       "linter-pylama"
       "build"
       "busy"
+      "rustfmt"
+      "rust-api-docs-helper"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -47,10 +49,8 @@
   latex:
     buildOnSave: true
     opener: "okular"
-  linter:
-    disabledProviders: [
-      "Pylama"
-    ]
+  "latex-completions": {}
+  linter: {}
   "linter-ui-default": {}
   minimap:
     autoToggle: false
@@ -125,3 +125,12 @@
     preferredLineLength: 78
     softWrapHangingIndent: 4
     tabLength: 4
+".rust.source":
+  "bracket-matcher":
+    autocompleteCharacters: [
+      "()"
+      "[]"
+      "{}"
+      "\"\""
+      "``"
+    ]
