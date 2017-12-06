@@ -69,7 +69,7 @@ exec --no-startup-id ~/.config/i3/monitors
     bindsym $mod+Shift+c reload
 
     # exit sway (logs you out of your wayland session)
-    bindsym $mod+Shift+e exit
+    # bindsym $mod+Shift+e exit
 
     # lock the screen
     bindsym $mod+x exec --no-startup-id i3lock -f -r 15 -s 5
