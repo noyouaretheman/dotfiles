@@ -32,7 +32,8 @@
   "dark-flat-ui": {}
   editor:
     fontFamily: "DejaVu Sans"
-    fontSize: 13
+    fontSize: 12
+    preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
     softWrapHangingIndent: 4
@@ -45,6 +46,7 @@
     fontFamily: "DejaVu Mono"
   latex:
     buildOnSave: true
+    opener: "okular"
   linter:
     disabledProviders: [
       "Pylama"
@@ -86,7 +88,6 @@
     flashOnUndoRedo: false
     flashScreenOnSearchHasNoMatch: false
     highlightSearch: true
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     useClipboardAsDefaultRegister: true
     useSmartcaseForSearch: true
     useSmartcaseForSearchCurrentWord: true
