@@ -17,7 +17,6 @@
     scheme: "Tomorrow"
   core:
     disabledPackages: [
-      "rustfmt"
       "rust-api-docs-helper"
     ]
     telemetryConsent: "limited"
@@ -42,8 +41,17 @@
     buildOnSave: true
     opener: "okular"
   "latex-completions": {}
-  linter: {}
-  "linter-ui-default": {}
+  linter:
+    disabledProviders: [
+      "Rust"
+    ]
+  "linter-rust":
+    disabledWarnings: [
+      "dead_code"
+      "unknown_lintings"
+    ]
+  "linter-ui-default":
+    showPanel: true
   minimap:
     autoToggle: false
     plugins:

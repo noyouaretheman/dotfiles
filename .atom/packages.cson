@@ -1,4 +1,5 @@
 packages: [
+  "atom-beautify"
   "atom-material-ui"
   "autocomplete-clang"
   "autocomplete-python"
@@ -45,7 +46,6 @@ packages: [
   "python-snippets"
   "python-tools"
   "rust-api-docs-helper"
-  "rustfmt"
   "script"
   "slim-dark-ui"
   "sort-lines"
