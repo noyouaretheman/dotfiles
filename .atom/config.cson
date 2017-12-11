@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    latex:
+      remove_trailing_whitespace: true
   "atom-material-ui":
     colors:
       abaseColor: "#fb9fb1"
