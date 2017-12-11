@@ -1,5 +1,4 @@
 packages: [
-  "atom-beautify"
   "atom-material-ui"
   "autocomplete-clang"
   "autocomplete-python"
