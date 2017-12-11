@@ -17,6 +17,8 @@ packages: [
   "intentions"
   "language-cmake"
   "language-latex"
+  "language-openscad"
+  "language-pcb"
   "language-restructuredtext"
   "language-rust"
   "language-tcl"
