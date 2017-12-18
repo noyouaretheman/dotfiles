@@ -259,6 +259,9 @@ client.urgent           $base01 $base02 $base08 $base07 $base08
 # turn on keyboard backlight
 exec --no-startup-id xset led on
 
+# swap caps and escape
+exec --no-startup-id setxkbmap -option caps:swapescape
+
 # menu tray
 exec --no-startup-id menutray -i
 
