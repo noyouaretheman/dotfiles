@@ -1,4 +1,9 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "df396a06-feeb-429a-a0c9-ac090f1de039"
+    rust:
+      rustfmt_path: "/home/bugsbunny/.cargo/bin/rustfmt"
   "atom-material-ui":
     colors:
       abaseColor: "#f0c674"
