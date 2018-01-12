@@ -81,6 +81,7 @@ instance=wlp4s0
 interval=5
 label=
 
+
 # Volume indicator
 #
 # The first parameter sets the step (and units to display)
@@ -123,7 +124,7 @@ interval=5
 # Date Time
 #
 [calendar]
-label= 
+label=
 interval=10
 
 
