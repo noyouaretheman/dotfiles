@@ -1,12 +1,14 @@
 "*":
   "atom-beautify":
+    general:
+      _analyticsUserId: "35c60f60-f8e2-4978-b123-cd942c100f85"
     latex:
       remove_trailing_whitespace: true
   "atom-material-ui":
     colors:
       abaseColor: "#fb9fb1"
       accentColor: "#6fc2ef"
-      predefinedColor: "Purple"
+      predefinedColor: "Indigo"
     fonts: {}
     tabs:
       compactTabs: true
@@ -50,7 +52,8 @@
   fonts:
     fontFamily: "DejaVu Mono"
   latex:
-    buildOnSave: true
+    enableExtendedBuildMode: false
+    enableShellEscape: true
     opener: "okular"
   "latex-completions": {}
   linter: {}
