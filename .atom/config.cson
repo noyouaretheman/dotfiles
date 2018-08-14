@@ -22,10 +22,6 @@
     scheme: "Chalk"
   core:
     disabledPackages: [
-      "linter-ui-default"
-      "linter"
-      "linter-gcc"
-      "linter-pylama"
       "build"
       "busy"
       "rustfmt"
@@ -39,7 +35,7 @@
   "dark-flat-ui": {}
   editor:
     fontFamily: "DejaVu Sans"
-    fontSize: 12
+    fontSize: 11
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
@@ -117,6 +113,9 @@
   editor:
     preferredLineLength: 78
     tabLength: 4
+".diff.source":
+  editor:
+    preferredLineLength: 78
 ".python.regexp.source":
   editor:
     preferredLineLength: 78
