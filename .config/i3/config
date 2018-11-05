@@ -256,9 +256,6 @@ client.unfocused        $base01 $base02 $base04 $base04 $base04
 client.urgent           $base01 $base02 $base08 $base07 $base08
 
 
-# turn on keyboard backlight
-exec --no-startup-id xset led on
-
 # swap caps and escape
 exec --no-startup-id setxkbmap -option caps:swapescape
 
@@ -269,6 +266,7 @@ exec --no-startup-id menutray -i
 exec_always --no-startup-id xrdb ~/.config/Xresources/Xresources
 
 # start redshift
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift -t 5000:3500
 
 for_window [title=".*Simulink.*"] floating enable
