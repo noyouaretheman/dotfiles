@@ -23,6 +23,7 @@ packages: [
   "language-pcb"
   "language-restructuredtext"
   "language-rust"
+  "language-scala"
   "language-tcl"
   "language-verilog"
   "language-vhdl"

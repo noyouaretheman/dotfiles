@@ -1,9 +1,14 @@
 "*":
   "atom-beautify":
+    executables:
+      emacs:
+        path: "/usr/bin/emacs"
     general:
       _analyticsUserId: "35c60f60-f8e2-4978-b123-cd942c100f85"
     latex:
       remove_trailing_whitespace: true
+    vhdl:
+      emacs_script_path: "/usr/bin/emacs"
   "atom-material-ui":
     colors:
       abaseColor: "#fb9fb1"
@@ -27,6 +32,7 @@
       "rustfmt"
       "rust-api-docs-helper"
     ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
@@ -35,7 +41,7 @@
   "dark-flat-ui": {}
   editor:
     fontFamily: "DejaVu Sans"
-    fontSize: 11
+    fontSize: 12
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
@@ -52,8 +58,13 @@
     enableShellEscape: true
     opener: "okular"
   "latex-completions": {}
-  linter: {}
-  "linter-ui-default": {}
+  linter:
+    disabledProviders: [
+      "Pylama"
+    ]
+  "linter-ui-default":
+    panelHeight: 300
+    showPanel: true
   minimap:
     autoToggle: false
     plugins:
@@ -71,6 +82,7 @@
     createOnChange: true
     forceOverwrite: true
   "spell-check":
+    addKnownWords: true
     grammars: [
       "source.asciidoc"
       "source.gfm"
@@ -78,6 +90,13 @@
       "text.plain"
       "text.plain.null-grammar"
       "text.tex.latex"
+    ]
+    knownWords: [
+      "reverberation"
+      "dereverberation"
+      "beamforming"
+      "beamformer"
+      "beamformers"
     ]
   "split-diff":
     hideTreeView: true
@@ -141,3 +160,8 @@
     ]
   editor:
     preferredLineLength: 99
+".source.vhdl":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 2
+    tabType: "soft"
