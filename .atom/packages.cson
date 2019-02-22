@@ -1,6 +1,7 @@
 packages: [
   "atom-beautify"
   "atom-material-ui"
+  "atom-terminal"
   "autocomplete-clang"
   "autocomplete-python"
   "base16-syntax"

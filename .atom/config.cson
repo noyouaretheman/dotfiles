@@ -21,6 +21,8 @@
       compactList: true
     ui:
       animations: false
+  "atom-terminal":
+    app: "/usr/bin/urxvt"
   "autocomplete-clang":
     includeSystemHeadersDocumentation: true
   "base16-syntax":
@@ -41,7 +43,7 @@
   "dark-flat-ui": {}
   editor:
     fontFamily: "DejaVu Sans"
-    fontSize: 12
+    fontSize: 13
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
@@ -97,6 +99,18 @@
       "beamforming"
       "beamformer"
       "beamformers"
+      "FGPA"
+      "VM"
+      "DE10-Nano"
+      "filesystem"
+      "bitstream"
+      "sudo"
+      "NFS"
+      "TFTP"
+      "repo"
+      "bitbake"
+      "sdcard"
+      "config"
     ]
   "split-diff":
     hideTreeView: true
