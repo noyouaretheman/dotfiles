@@ -10,6 +10,6 @@ for config_file (~/.config/zsh/*.zsh); do
 done
 
 # just for giggles...
-cowfortune
+cowsay `fortune`
 
 #zprof

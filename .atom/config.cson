@@ -8,7 +8,7 @@
     colors:
       abaseColor: "#f0c674"
       accentColor: "#de935f"
-      predefinedColor: "Purple"
+      predefinedColor: "Blue Grey"
     fonts: {}
     tabs:
       compactTabs: true
@@ -27,11 +27,12 @@
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
-      "base16-tomorrow-dark-theme"
+      "base16-syntax"
     ]
   "dark-flat-ui": {}
   editor:
     fontFamily: "DejaVu Sans"
+    fontSize: 11
     showIndentGuide: true
     softWrap: true
     softWrapHangingIndent: 4
@@ -43,12 +44,14 @@
   fonts:
     fontFamily: "DejaVu Mono"
   latex:
-    buildOnSave: true
+    enableExtendedBuildMode: false
+    enableShellEscape: true
     opener: "okular"
   "latex-completions": {}
   linter:
     disabledProviders: [
       "Rust"
+      "Pylama"
     ]
   "linter-rust":
     disabledWarnings: [
@@ -56,7 +59,7 @@
       "unknown_lintings"
     ]
   "linter-ui-default":
-    showPanel: true
+    panelHeight: 300
   minimap:
     autoToggle: false
     plugins:
@@ -74,6 +77,7 @@
     createOnChange: true
     forceOverwrite: true
   "spell-check":
+    addKnownWords: true
     grammars: [
       "source.asciidoc"
       "source.gfm"
@@ -81,6 +85,21 @@
       "text.plain"
       "text.plain.null-grammar"
       "text.tex.latex"
+    ]
+    knownWords: [
+      "reverberation"
+      "dereverberation"
+      "beamformer"
+      "beamforming"
+      "beamformers"
+      ""
+      "dataset"
+      "runtime"
+      "datasets"
+      "interpretability"
+      "eigendecomposition"
+      "pseudocode"
+      "dataset's"
     ]
   "split-diff":
     hideTreeView: true
@@ -98,6 +117,12 @@
     useSmartcaseForSearchCurrentWord: true
   welcome:
     showOnStartup: false
+".beamer.latex.tex.text":
+  editor:
+    preferredLineLength: 120
+".bibtex.text":
+  editor:
+    preferredLineLength: 120
 ".c.source":
   editor:
     preferredLineLength: 78
@@ -116,6 +141,13 @@
   editor:
     preferredLineLength: 78
     tabLength: 4
+".latex.memoir.tex.text":
+  editor:
+    preferredLineLength: 120
+".latex.tex.text":
+  editor:
+    preferredLineLength: 120
+    scrollPastEnd: false
 ".python.regexp.source":
   editor:
     preferredLineLength: 78
@@ -139,3 +171,7 @@
       "\"\""
       "``"
     ]
+".source.vhdl":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 2
