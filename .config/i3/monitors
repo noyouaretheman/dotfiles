@@ -1,4 +1,4 @@
 #!/bin/sh
 
-xrandr --output HDMI-0 --mode 2560x1080 --primary --pos 1080x640 --output DVI-I-1 --mode 1920x1080 --pos 0x0 --rotate left --output DP-0 --mode 2560x1080 --pos 3640x640
-feh --bg-scale ~/Pictures/Crystals/chalk4k.png
+xrandr --output DP-1 --primary --pos 0x380 --output HDMI-0 --mode 1920x1080 --pos 3440x0 --rotate right
+feh --bg-fill ~/Pictures/floppy1.png

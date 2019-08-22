@@ -11,9 +11,9 @@
       emacs_script_path: "/usr/bin/emacs"
   "atom-material-ui":
     colors:
-      abaseColor: "#fb9fb1"
-      accentColor: "#6fc2ef"
-      predefinedColor: "Indigo"
+      abaseColor: "#f2777a"
+      accentColor: "#ffcc66"
+      predefinedColor: "Red"
     fonts: {}
     tabs:
       compactTabs: true
@@ -21,18 +21,25 @@
       compactList: true
     ui:
       animations: false
+      panelContrast: true
   "atom-terminal":
     app: "/usr/bin/urxvt"
   "autocomplete-clang":
     includeSystemHeadersDocumentation: true
   "base16-syntax":
-    scheme: "Chalk"
+    scheme: "Eighties"
   core:
     disabledPackages: [
       "build"
       "busy"
       "rustfmt"
       "rust-api-docs-helper"
+      "linter"
+      "linter-gcc"
+      "linter-pylama"
+      "linter-rust"
+      "linter-ui-default"
+      "autocomplete-clang"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
@@ -43,12 +50,11 @@
   "dark-flat-ui": {}
   editor:
     fontFamily: "DejaVu Sans"
-    fontSize: 13
+    fontSize: 12
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
-    softWrapHangingIndent: 4
-    tabLength: 4
+    softWrapHangingIndent: 2
   "exception-reporting":
     userId: "43fd62fa-3448-44e5-8f9d-75af168f970e"
   "file-watcher":
@@ -68,7 +74,6 @@
     panelHeight: 300
     showPanel: true
   minimap:
-    autoToggle: false
     plugins:
       codeglance: false
       codeglanceDecorationsZIndex: 0
@@ -130,8 +135,7 @@
     showOnStartup: false
 ".c.source":
   editor:
-    preferredLineLength: 78
-    tabLength: 4
+    tabType: "soft"
 ".console.python.text":
   editor:
     autoIndentOnPaste: true
@@ -140,7 +144,6 @@
     tabLength: 4
 ".cpp.source":
   editor:
-    preferredLineLength: 78
     tabLength: 4
 ".diff":
   editor:
@@ -149,6 +152,16 @@
 ".diff.source":
   editor:
     preferredLineLength: 78
+".matlab.source":
+  editor:
+    softWrapHangingIndent: 4
+    tabLength: 4
+    tabType: "soft"
+".octave.source":
+  editor:
+    softWrapHangingIndent: 4
+    tabLength: 4
+    tabType: "soft"
 ".python.regexp.source":
   editor:
     preferredLineLength: 78

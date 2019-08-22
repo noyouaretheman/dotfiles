@@ -2,4 +2,4 @@ show_calendar = 1
 mark_today = 1
 close_on_unfocus = 0
 mainwindow_yoffset = 21
-mainwindow_xoffset = -40
+mainwindow_xoffset = -120

@@ -5,24 +5,26 @@
 # Read `man 5 sway` for a complete reference.
 
 #
-# base16 chalk colors
+# base16 eighties colors
 #
-set $base00 #151515
-set $base01 #202020
-set $base02 #303030
-set $base03 #505050
-set $base04 #b0b0b0
-set $base05 #d0d0d0
-set $base06 #e0e0e0
-set $base07 #f5f5f5
-set $base08 #fb9fb1
-set $base09 #eda987
-set $base0A #ddb26f
-set $base0B #acc267
-set $base0C #12cfc0
-set $base0D #6fc2ef
-set $base0E #e1a3ee
-set $base0F #deaf8f
+set $base00 #2d2d2d
+set $base01 #393939
+set $base02 #515151
+set $base03 #747369
+set $base04 #a09f93
+set $base05 #d3d0c8
+set $base06 #e8e6df
+set $base07 #f2f0ec
+set $base08 #f2777a
+set $base09 #f99157
+set $base0A #ffcc66
+set $base0B #99cc99
+set $base0C #66cccc
+set $base0D #6699cc
+set $base0E #cc99cc
+set $base0F #d27b53
+
+
 
 ### Variables
 #
@@ -56,7 +58,7 @@ exec --no-startup-id ~/.config/i3/monitors
     bindsym $mod+d exec $menu
 
     # network manager
-    bindsym $mod+n exec networkmanager_dmenu
+    #bindsym $mod+n exec networkmanager_dmenu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -73,6 +75,9 @@ exec --no-startup-id ~/.config/i3/monitors
 
     # window switcher
     bindsym $mod+Tab exec rofi -show window
+
+    # rofi calculator https://github.com/svenstaro/rofi-calc
+    bindsym $mod+c exec rofi -show calc -modi calc -no-show-match -no-sort
 #
 # Moving around:
 #
@@ -241,8 +246,8 @@ bar {
 #
 # Window Borders:
 #
-new_window none
-new_float none
+default_border none
+default_floating_border none
 
 #
 # Windows Colors:
@@ -266,5 +271,13 @@ exec_always --no-startup-id xrdb ~/.config/Xresources/Xresources
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift -t 5000:3500
 
+# start hangouts messenger
+exec --no-startup-id pidgin
+
+# notifications
+exec --no-startup-id dunst
+
+
 for_window [title=".*Simulink.*"] floating enable
 #for_window [title="Figure.*"] floating enable
+for_window [title="gsimplecal"] floating enable

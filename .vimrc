@@ -1,4 +1,4 @@
-colorscheme base16-chalk
+colorscheme base16-eighties
 
 syntax on
 
